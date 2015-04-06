@@ -1,0 +1,47 @@
+.product-grid {
+  text-align: center;
+  max-width: 100%;
+  li {
+    display: inline;
+  }
+}
+.product-list-item {
+  float: left;
+  margin: 0.5em auto;
+  width: 100%;
+  @media screen and (min-width: $medium) {
+    max-width: 25em;
+  }
+  @media screen and (min-width: $large) {
+    max-width: 20em;
+  }
+}
+.product-image {
+  display: block;
+  margin: 0 auto;
+}
+.item-color-list {
+  display: inline-block;
+  margin: 0 auto;
+}
+.color-swatch {
+  float: left;
+  max-width: 1.75em;
+  margin: 0.125em;
+}
+.active-swatch {
+  box-sizing: border-box;
+  padding: 0.125em;
+  border: 1px $primary-color solid;
+}
+.product-title {
+  display: block;
+  font-size: 1em;
+  font-weight: 900;
+  margin: 0.5em 0 0;
+  text-decoration: none;
+  color: #000;
+    &:hover {
+      color: $primary-color;
+    }
+}
