@@ -10,19 +10,19 @@ img {
   max-width: 100%; }
 
 main {
-  max-width: XXem; }
+  max-width: 120em; }
 
 .sidebar-wrapper {
   max-width: 100%;
   float: left; }
-  @media screen and (min-width: 70em) {
+  @media screen and (min-width: 60em) {
     .sidebar-wrapper {
       width: 20%; } }
 
 .main-wrapper {
   max-width: 100%;
   float: left; }
-  @media screen and (min-width: 70em) {
+  @media screen and (min-width: 60em) {
     .main-wrapper {
       width: 80%; } }
 
@@ -35,25 +35,36 @@ aside {
   margin: 0 1.25em; }
 
 .product-grid {
-  text-align: center;
-  max-width: 100%; }
-  .product-grid li {
-    display: inline; }
+  text-align: center; }
 
 .product-list-item {
-  float: left;
-  margin: 0.5em auto;
   width: 100%; }
-  @media screen and (min-width: 50em) {
+  @media (min-width: 40em) {
     .product-list-item {
-      max-width: 25em; } }
-  @media screen and (min-width: 70em) {
+      width: 50%; } }
+  @media (min-width: 60em) {
     .product-list-item {
-      max-width: 20em; } }
+      width: 33%; } }
+  @media (min-width: 100em) {
+    .product-list-item {
+      width: 25%; } }
+  @media (min-width: 140em) {
+    .product-list-item {
+      width: 16.5%; } }
+
+li.product-list-item {
+  float: left;
+  padding: 0.5em 0; }
 
 .product-image {
   display: block;
   margin: 0 auto; }
+
+.item-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto; }
 
 .item-color-list {
   display: inline-block;
@@ -71,6 +82,7 @@ aside {
 
 .product-title {
   display: block;
+  width: 100%;
   font-size: 1em;
   font-weight: 900;
   margin: 0.5em 0 0;
@@ -79,4 +91,15 @@ aside {
   .product-title:hover {
     color: #f26525; }
 
-/*# sourceMappingURL=styles.css.map */
+.registered-symbol {
+  font-size: 0.75em;
+  position: relative; }
+
+.trademark-symbol {
+  position: relative;
+  line-height: 0.25em; }
+
+.is-active {
+  box-sizing: border-box;
+  padding: 0.125em;
+  border: 1px #f26525 solid; }

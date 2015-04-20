@@ -1,7 +1,11 @@
 # Sass Files #
-
+##############
 .sass-cache
 css/styles.css.map
+
+# Browser Sync Files #
+######################
+.bs-config.js
 
 # Compiled source #
 ###################
@@ -35,7 +39,6 @@ css/styles.css.map
 ######################
 .DS_Store
 .DS_Store?
-._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
