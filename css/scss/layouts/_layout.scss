@@ -1,5 +1,6 @@
 main {
-  max-width: 120em;
+  display: block;
+  margin: auto;
 }
 .sidebar-wrapper {
   max-width: 100%;
@@ -19,16 +20,36 @@ main {
   width: 100%;
   @media (min-width: $medium) {
     width: 50%;
-    
+    &:nth-child(2n+1) {
+      clear: left;
+    }
+    &:nth-child(1n+1) {
+      clear: none;
+    }
   }
   @media (min-width: $large) {
     width: 33%;
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+    &:nth-child(2n+1) {
+      clear: none;
+    }
   }
   @media (min-width: $x-large) {
     width: 25%;
+    &:nth-child(3n+1) {
+      clear: none;
+    }
   }
   @media (min-width: $xx-large) {
     width: 16.5%;
+    &:nth-child(6n+1) {
+      clear: left;
+    }
+    &:nth-child(5n+1) {
+      clear: none;
+    }
   }
 }
 li.product-grid__item {
