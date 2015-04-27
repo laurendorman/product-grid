@@ -1,0 +1,42 @@
+.product-grid {
+  text-align: center;
+}
+.product-image {
+  display: block;
+  margin: 0 auto;
+}
+.item-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.item-color-list {
+  display: inline-block;
+  margin: 0 auto;
+}
+.color-swatch {
+  float: left;
+  max-width: 1.75em;
+  margin: 0.125em;
+}
+.product-title {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 900;
+  margin: 0.5em 0 0;
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: $primary-color;
+  }
+}
+.registered-symbol {
+  font-size: 0.75em;
+  position: relative;
+}
+.trademark-symbol {
+  position: relative;
+  line-height: 0.25em;
+}

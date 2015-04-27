@@ -3,10 +3,6 @@
 .sass-cache
 css/styles.css.map
 
-# Browser Sync Files #
-######################
-.bs-config.js
-
 # Compiled source #
 ###################
 *.com
